@@ -7,10 +7,8 @@
 
 import Foundation
 
-struct Timer {
-  var timeRemaining = 0
-  var timerRunning: Bool = false
-  
+struct TimerConverter {
+ 
   func convertSecondsToTime(from: Int) -> String {
     let minutes = from / 60
     let seconds = from % 60
