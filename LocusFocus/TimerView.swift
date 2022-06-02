@@ -33,25 +33,36 @@ struct TimerView: View {
             timeRemaining = thirtyMinutes
           }
         }
+
+        .font(.system(size: 30))
         Text(timeConverter.convertSecondsToTime(from: timeRemaining))
           .padding()
           .font(.system(size: 100))
           .onReceive(timer) { _ in
             if timeRemaining > 0 && timerRunning {
               timeRemaining -= 1
-            }else {
+            } else {
               timerRunning = false
             }
           }
+          .padding(EdgeInsets(top: 60, leading: 0, bottom: 50, trailing: 0))
+
+        
+
         HStack(spacing: 30) {
           Button("Start") {
             timerRunning = true
-          }
+          }.buttonStyle(StartButton())
           Button("Stop") {
             timerRunning = false
+          }.buttonStyle(StopButton())
           }
+        .font(.system(size: 25, weight: .semibold))
+        Button("Reset") {
+          timeRemaining = 0
+          timerRunning = false
         }
-        
+        .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
       }
     }
 }

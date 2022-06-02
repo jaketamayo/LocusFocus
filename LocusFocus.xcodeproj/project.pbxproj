@@ -13,6 +13,7 @@
 		CF0BE81128482B32004324F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0BE81028482B32004324F1 /* Preview Assets.xcassets */; };
 		CF0BE81828482B51004324F1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BE81728482B51004324F1 /* TimerView.swift */; };
 		CF0BE81A28482C13004324F1 /* TimerConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BE81928482C13004324F1 /* TimerConverter.swift */; };
+		CF0BE81C2848313E004324F1 /* StartStopCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CF0BE81028482B32004324F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF0BE81728482B51004324F1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CF0BE81928482C13004324F1 /* TimerConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConverter.swift; sourceTree = "<group>"; };
+		CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartStopCustomButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				CF0BE80928482B31004324F1 /* LocusFocusApp.swift */,
 				CF0BE80B28482B31004324F1 /* ContentView.swift */,
 				CF0BE81728482B51004324F1 /* TimerView.swift */,
+				CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */,
 				CF0BE81928482C13004324F1 /* TimerConverter.swift */,
 				CF0BE80D28482B32004324F1 /* Assets.xcassets */,
 				CF0BE80F28482B32004324F1 /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0BE81A28482C13004324F1 /* TimerConverter.swift in Sources */,
+				CF0BE81C2848313E004324F1 /* StartStopCustomButtons.swift in Sources */,
 				CF0BE81828482B51004324F1 /* TimerView.swift in Sources */,
 				CF0BE80C28482B31004324F1 /* ContentView.swift in Sources */,
 				CF0BE80A28482B31004324F1 /* LocusFocusApp.swift in Sources */,
