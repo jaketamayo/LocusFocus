@@ -7,16 +7,7 @@
 
 import SwiftUI
 
-/*
-TODO:
-   1. Make time buttons dissapear after clicking on one, then show after timer is finished
-   2. Make start and stop look more like buttons
-   3. Make times look like buttons
-   4. Show progress of total time focused that day
-   5. Add button to add task to focus on for current session
-   6. Add notifications when timer has ended
-   7. Save the users task
- */
+
 
 struct ContentView: View {
     var body: some View {

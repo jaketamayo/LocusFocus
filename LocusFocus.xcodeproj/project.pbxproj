@@ -16,6 +16,7 @@
 		CF0BE81C2848313E004324F1 /* StartStopCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */; };
 		CFDD7C132849388900C34D3A /* AddingTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD7C122849388900C34D3A /* AddingTaskModel.swift */; };
 		CFDD7C152849459200C34D3A /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD7C142849459200C34D3A /* NotificationHandler.swift */; };
+		CFDD7C172849652F00C34D3A /* TimeSelectionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD7C162849652F00C34D3A /* TimeSelectionButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartStopCustomButtons.swift; sourceTree = "<group>"; };
 		CFDD7C122849388900C34D3A /* AddingTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingTaskModel.swift; sourceTree = "<group>"; };
 		CFDD7C142849459200C34D3A /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		CFDD7C162849652F00C34D3A /* TimeSelectionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectionButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				CF0BE80B28482B31004324F1 /* ContentView.swift */,
 				CF0BE81728482B51004324F1 /* TimerView.swift */,
 				CFDD7C142849459200C34D3A /* NotificationHandler.swift */,
+				CFDD7C162849652F00C34D3A /* TimeSelectionButtons.swift */,
 				CF0BE81B2848313E004324F1 /* StartStopCustomButtons.swift */,
 				CFDD7C112849386700C34D3A /* Model */,
 				CF0BE81928482C13004324F1 /* TimerConverter.swift */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0BE81A28482C13004324F1 /* TimerConverter.swift in Sources */,
+				CFDD7C172849652F00C34D3A /* TimeSelectionButtons.swift in Sources */,
 				CF0BE81C2848313E004324F1 /* StartStopCustomButtons.swift in Sources */,
 				CFDD7C152849459200C34D3A /* NotificationHandler.swift in Sources */,
 				CF0BE81828482B51004324F1 /* TimerView.swift in Sources */,

@@ -10,22 +10,22 @@ import SwiftUI
 struct StartButton: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
-      .frame(width: 60, height: 20)
+      .frame(width: 40, height: 40)
       .padding()
       .foregroundColor(Color.white)
       .background(Color.green)
-      .clipShape(Capsule())
+      .clipShape(Circle())
   }
 }
 
 struct StopButton: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
-      .frame(width: 60, height: 20)
+      .frame(width: 40, height: 40)
       .padding()
       .foregroundColor(Color.white)
       .background(Color.red)
-      .clipShape(Capsule())
+      .clipShape(Circle())
   }
 }
 
