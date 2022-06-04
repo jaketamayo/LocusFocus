@@ -37,11 +37,13 @@ struct TimerView: View {
         }
         .buttonStyle(TimeSelectionButtons())
       }
-      .font(.system(size: 30, weight: .semibold))
+      .font(.system(size: 30, weight: .medium))
+      .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
 
+      ///Timer display
       Text(timeConverter.convertSecondsToTime(from: timeRemaining))
         .padding()
-        .font(.system(size: 100))
+        .font(.system(size: 100, weight: .semibold))
         .onReceive(timer) { _ in
           if timeRemaining > 0 && timerRunning {
             timeRemaining -= 1
@@ -50,9 +52,19 @@ struct TimerView: View {
           }
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
-      
-      VStack {
+       
+      ///
+
       HStack(spacing: 30) {
+        Button {
+          timeRemaining = 0
+          timerRunning = false
+        } label: {
+          Image(systemName: "gobackward")
+        }
+        .buttonStyle(ResetButton())
+       
+        //Start Button
         Button {
           timerRunning = true
           notification.scheduleNotification(time: timeRemaining)
@@ -61,21 +73,22 @@ struct TimerView: View {
           Image(systemName: "play.fill")
         }
         .buttonStyle(StartButton())
+        .font(.system(size: 33, weight: .semibold))
+
+       
+        //Stop Button
         Button {
           timerRunning = false
         } label: {
           Image(systemName: "stop.fill")
         }
-       
         .buttonStyle(StopButton())
+       
       }
       .font(.system(size: 25, weight: .semibold))
-        Button("Reset") {
-          timeRemaining = 0
-          timerRunning = false
-        }
-        .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
-      }
+      
+      
+  
       .onAppear {
         UIApplication.shared.applicationIconBadgeNumber = 0
       }
