@@ -40,7 +40,7 @@ struct TimerView: View {
       .font(.system(size: 30, weight: .medium))
       .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
 
-      ///Timer display
+      //Timer display
       Text(timeConverter.convertSecondsToTime(from: timeRemaining))
         .padding()
         .font(.system(size: 100, weight: .semibold))
@@ -53,9 +53,10 @@ struct TimerView: View {
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
        
-      ///
 
       HStack(spacing: 30) {
+        
+        // Reset button
         Button {
           timeRemaining = 0
           timerRunning = false
@@ -83,8 +84,13 @@ struct TimerView: View {
           Image(systemName: "stop.fill")
         }
         .buttonStyle(StopButton())
-       
+      
       }
+
+      Button("Save", action: {
+        // Save time to display on TimeHistoryView
+      })
+      
       .font(.system(size: 25, weight: .semibold))
       
       

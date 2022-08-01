@@ -8,5 +8,7 @@
 import Foundation
 
 struct AddTask {
-  var add: String?
+//  var add: String?
+  var savedTime: Int
+  
 }
